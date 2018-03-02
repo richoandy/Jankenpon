@@ -1,0 +1,68 @@
+.container {
+  padding-top: 50px;
+  text-align: center;
+  margin: 0 auto;
+  font-family: monospace;
+  font-weight: 1000;
+}
+
+.bottomSpace{
+  margin-bottom: 50px;
+}
+
+
+#satoshi-image{
+  width: 50px;
+  height: 50px;
+}
+#bannerImage{
+  width: 500px;
+  height: 350px;
+}
+
+.lives{
+  width: 50px;
+  height: 50px;
+}
+
+#player{
+  visibility:hidden
+}
+
+#enemy{
+  visibility:hidden
+}
+
+#satoshi-hand{
+  visibility: hidden;
+}
+
+.icon{
+  transition: top ease 0.5s;
+}
+.icon:hover {
+  position:relative;
+  top:5px;
+}
+
+.thankyouImage {
+  display: block;
+  margin: 0 auto;
+}
+
+#credit{
+  position:absolute;
+  bottom:0;
+  width:100%;
+  height:60px;
+}
+
+#rules{
+position: fixed;
+top: 0;
+right: 200px;
+width: 300px;
+visibility: hidden;
+font-family: monospace;
+font-weight: 1000;
+}

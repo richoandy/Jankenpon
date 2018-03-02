@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Thankyou For Playing</title>
+    <link rel="stylesheet" href="style/style.css">
+    <style type="text/css">
+      .thankyouImg {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      body{
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <div id = "tyImage">
+
+    </div>
+  </body>
+
+  <script type="text/javascript">
+    var divTyImage = document.getElementById("tyImage");
+
+    for (var i = 0; i < 4; i++) {
+      var img = document.createElement('img');
+      img.setAttribute('src', 'img/thankyou.png');
+      img.setAttribute('alt', 'thankyou');
+      img.setAttribute('class', 'thankyouImg');
+      divTyImage.appendChild(img);
+    }
+  </script>
+</html>

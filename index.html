@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Satoshi's Jankenpon!</title>
+    <link rel="stylesheet" href="style/style.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="banner bottomSpace">
+        <button type="button" name="initial-play-button" onclick="show()" id="lets-play-button">Ayo Mulai !</button>
+        <button type="button" name="show-rules-button" onclick="showRules()" id="show-rules-button" >Show Me The Rules !</button>
+      </div>
+      <div id="enemy" class="bottomSpace">
+          <img src="img/satoshi.png" alt="satoshi" id="satoshi-image">
+          <img src= "img/gunting.png" alt="satoshi-hand" id="satoshi-hand">
+      </div>
+      <div id="player" class="bottomSpace">
+        <div id="livesLeft">
+
+        </div>
+        <div class="icons">
+          <input type="image" src="img/gunting.png" alt="gunting" class="icon" id ="gunting" onclick="play(this.id)"/>
+          <input type="image" src="img/batu.png" alt="batu" class="icon" id ="batu" onclick="play(this.id)" />
+          <input type="image" src="img/kertas.png" alt="kertas" class="icon" id ="kertas" onclick="play(this.id)" />
+        </div>
+        <div id="winCount">
+          win count : 0
+        </div>
+      </div>
+    <div id="credit">
+      Richo Andy&copy; 2018
+    </div>
+    </div>
+    <div id="rules">
+      <h3>Satoshi's Jankenpon Game Rules</h3>
+      <ul>
+        <li>Kamu punya 3 nyawa</li>
+        <li>Jika kamu menang adu suit dengan Master Satoshi, kamu mendapatkan 1 nyawa tambahan</li>
+        <li>Jika kamu kalah, nyawamu berkurang 1</li>
+        <li>Kalahkan Satoshi dengan menang 5 kali di permainan Jankenpon !</li>
+      </ul>
+    </div>
+    <script LANGUAGE="JavaScript" src="js/main.js" ></script>
+  </body>
+</html>
